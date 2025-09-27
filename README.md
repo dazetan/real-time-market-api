@@ -23,3 +23,9 @@ Simulates and streams market trades in real time with floating bars, candlestick
 ```bash
 cd OOP_project_4
 python -m uvicorn server.main:app --reload --port 8000
+```
+###  2. Start the simulator
+```bash
+cd OOP_project_4/simulator
+python simulator.py
+```
