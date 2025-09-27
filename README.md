@@ -19,7 +19,7 @@ Simulates and streams market trades in real time with floating bars, candlestick
 - Python 3.10+
 - Uvicorn
 
-### 1️⃣ Start the server
+### 1. Start the server
 ```bash
 cd OOP_project_4
 python -m uvicorn server.main:app --reload --port 8000
