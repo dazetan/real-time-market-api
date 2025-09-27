@@ -29,3 +29,4 @@ python -m uvicorn server.main:app --reload --port 8000
 cd OOP_project_4/simulator
 python simulator.py
 ```
+![Project](https://github.com/user-attachments/assets/0e9ac97b-f691-4943-9e05-ae065d8ad195)
