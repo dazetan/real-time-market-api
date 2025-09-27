@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Stock Data</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-annotation"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AAPL Real-Time Stock Data</h1>
+            <div class="stats-panel">
+                <div class="stat-box">
+                    <span class="stat-label">Last Price:</span>
+                    <span id="last-price" class="stat-value">--</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Open:</span>
+                    <span id="day-open" class="stat-value">--</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Day High:</span>
+                    <span id="day-high" class="stat-value">--</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Day Low:</span>
+                    <span id="day-low" class="stat-value">--</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Volume:</span>
+                    <span id="day-volume" class="stat-value">--</span>
+                </div>
+                <div class="stat-box">
+                    <span class="stat-label">Status:</span>
+                    <span id="connection-status" class="stat-value online">Connected</span>
+                </div>
+            </div>
+        </header>
+
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <h2>Price Chart with Candlesticks</h2>
+                <canvas id="price-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <h2>Volume Chart</h2>
+                <canvas id="volume-chart"></canvas>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-wrapper">
+                <h2>MACD Indicator</h2>
+                <canvas id="macd-chart"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

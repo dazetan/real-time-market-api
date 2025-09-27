@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main container for content */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Heading styles */
+h1 {
+  font-size: 28px;
+  margin-bottom: 16px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #34495e;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 8px;
+}
+
+/* Statistics panel layout */
+.stats-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Individual statistic box styles */
+.stat-box {
+  flex: 1;
+  min-width: 140px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Statistic label */
+.stat-label {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin-bottom: 4px;
+}
+
+/* Statistic value */
+.stat-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+/* Styling for last price */
+#last-price {
+  color: #2ecc71;
+}
+
+/* Connection status base style */
+#connection-status {
+  font-weight: bold;
+}
+
+/* Online status style */
+#connection-status.online {
+  color: #2ecc71;
+}
+
+/* Offline status style */
+#connection-status.offline {
+  color: #e74c3c;
+}
+
+/* Chart containers spacing */
+.chart-container {
+  margin-bottom: 25px;
+}
+
+/* Chart wrapper styling */
+.chart-wrapper {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 300px;
+  position: relative;
+}
+
+canvas {
+  width: 100% !important;
+  height: 250px !important;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .stat-box {
+      min-width: calc(50% - 10px);
+  }
+  
+  .chart-wrapper {
+      height: 250px;
+  }
+  
+  canvas {
+      height: 200px !important;
+  }
+}
+
+/* Responsive styles for mobile screens */
+@media screen and (max-width: 480px) {
+  .stat-box {
+      min-width: 100%;
+  }
+  
+  .chart-wrapper {
+      height: 220px;
+  }
+  
+  canvas {
+      height: 170px !important;
+  }
+}
